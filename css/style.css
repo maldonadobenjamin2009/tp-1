@@ -1049,3 +1049,195 @@ fieldset.form-field {
         font-size: 13px;
     }
 }
+/* Ultimos detalles de PiZ */
+
+/* Marca la pagina actual en el menu */
+.mn-nav a[aria-current="page"] {
+    color: #b93625;
+    font-weight: bold;
+}
+
+/* Hace mas facil ver donde estamos con el teclado */
+a:focus-visible,
+button:focus-visible,
+label:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #b93625;
+    outline-offset: 3px;
+}
+
+/* Efecto suave al pasar por las tarjetas */
+.ftr-card,
+.piz-crd,
+.contact-tip {
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ftr-card:hover,
+.piz-crd:hover {
+    border-color: #d9b9a7;
+    box-shadow: 0 4px 14px rgba(48, 37, 31, 0.08);
+}
+
+/* Resalta la pizza cuando esta seleccionada */
+#p-muzza:checked ~ .mn-layt .piz-crd:nth-child(1),
+#p-napo:checked ~ .mn-layt .piz-crd:nth-child(2),
+#p-peppe:checked ~ .mn-layt .piz-crd:nth-child(3),
+#p-fugaz:checked ~ .mn-layt .piz-crd:nth-child(4),
+#p-c-quesos:checked ~ .mn-layt .piz-crd:nth-child(5),
+#p-aceitunas:checked ~ .mn-layt .piz-crd:nth-child(6),
+#p-jamo-moron:checked ~ .mn-layt .piz-crd:nth-child(7),
+#p-vegie:checked ~ .mn-layt .piz-crd:nth-child(8) {
+    border-color: #b93625;
+}
+
+/* Como el sitio no usa JavaScript, el importe se confirma al consultar */
+.cart-total .total::before {
+    content: "A confirmar";
+    color: #b93625;
+    font-size: 13px;
+}
+
+/* Evita que los campos largos rompan el ancho de la pagina */
+.contact-form,
+.form-field,
+.form-field input,
+.form-field select,
+.form-field textarea {
+    min-width: 0;
+}
+
+.form-field textarea {
+    max-width: 100%;
+}
+
+/* Un poco mas de espacio para pantallas medianas */
+@media (max-width: 900px) {
+    .hero {
+        gap: 24px;
+    }
+
+    .contact-layt {
+        grid-template-columns: 1fr 1.1fr;
+    }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 700px) {
+    .hero {
+        padding-top: 5px;
+    }
+
+    .sect,
+    .gallery-sect {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .mn-layt {
+        gap: 25px;
+    }
+
+    .cart-pan-hd h2 {
+        font-size: 20px;
+    }
+
+    .contact-layt {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 92%;
+    }
+
+    .brand strong {
+        font-size: 22px;
+    }
+
+    .mn-nav {
+        width: 100%;
+        gap: 9px 12px;
+    }
+
+    .mn-nav a {
+        font-size: 13px;
+    }
+
+    .copy-h h1 {
+        font-size: clamp(30px, 8vw, 40px);
+    }
+
+    .ftr-grid,
+    .piz-grd,
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ftr-cont,
+    .piz-crd-bdy {
+        padding: 14px;
+    }
+
+    .contact-form {
+        padding: 16px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta-band {
+        padding: 25px 0;
+    }
+
+    .ftr-brnd {
+        font-size: 21px;
+    }
+}
+
+/* En pantallas muy angostas, mantenemos todo dentro del ancho */
+@media (max-width: 360px) {
+    .brand {
+        gap: 7px;
+    }
+
+    .brand img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .mn-nav .nav-cart {
+        padding: 6px 10px;
+    }
+
+    .piz-nm-prc {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .cart-total {
+        flex-wrap: wrap;
+    }
+}
+
+/* Respeta la preferencia de reducir movimiento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
