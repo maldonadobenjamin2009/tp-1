@@ -1,0 +1,368 @@
+/* Estilos generales de PiZ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fff8ef;
+    color: #30251f;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Encabezado y menu */
+.headr-sit {
+    background: #ffffff;
+    border-bottom: 1px solid #eaded0;
+}
+
+.hdr-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand span {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand strong {
+    color: #b93625;
+    font-size: 25px;
+}
+
+.brand small {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.mn-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.mn-nav a {
+    font-size: 14px;
+}
+
+.mn-nav a:hover {
+    color: #b93625;
+}
+
+.mn-nav .nav-cart {
+    background: #b93625;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 20px;
+}
+
+/* Titulos y botones */
+.ceja {
+    color: #b93625;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    padding: 11px 18px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #b93625;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #922b1e;
+}
+
+.btn-light {
+    background: #fff8ef;
+    color: #30251f;
+}
+
+.btn-outline {
+    border: 1px solid #b93625;
+    background: transparent;
+    color: #b93625;
+}
+
+.txt-link {
+    color: #b93625;
+    font-weight: bold;
+}
+
+/* Parte principal de Inicio */
+.hero {
+    width: 90%;
+    max-width: 1100px;
+    margin: 55px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.copy-h h1 {
+    margin: 10px 0;
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.08;
+}
+
+.copy-h h1 em {
+    color: #b93625;
+    font-style: normal;
+}
+
+.desc-h {
+    max-width: 500px;
+    color: #6e6057;
+}
+
+.act-h a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #b93625;
+    color: #ffffff;
+    padding: 11px 18px;
+    border-radius: 5px;
+}
+
+.nts-h {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 22px;
+    font-size: 13px;
+}
+
+.nt-icn {
+    color: #b93625;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.stmp-rnd {
+    display: inline-block;
+    background: #f0d7bd;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.capt-h {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+    color: #6e6057;
+    font-size: 13px;
+}
+
+.capt-strs {
+    color: #b93625;
+}
+
+.ticker {
+    background: #30251f;
+    color: #ffffff;
+    padding: 13px 5%;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Titulos de las otras paginas */
+.inr-pg {
+    padding-top: 25px;
+}
+
+.int-pg {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.int-pg h1 {
+    margin: 8px 0;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+}
+
+.int-pg > p:last-child {
+    max-width: 650px;
+    color: #6e6057;
+}
+
+/* Presentacion de la pizzeria */
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    padding-top: 20px;
+    padding-bottom: 55px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-copy h2 {
+    margin: 8px 0;
+    line-height: 1.2;
+}
+
+.about-copy p {
+    color: #6e6057;
+}
+
+.about-values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 25px 0;
+}
+
+.about-values div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-values strong {
+    color: #b93625;
+    font-size: 22px;
+}
+
+.about-values span {
+    font-size: 13px;
+}
+
+/* Franja de invitacion */
+.cta-band {
+    background: #b93625;
+    color: #ffffff;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+.cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.cta-inner h2 {
+    margin: 5px 0;
+}
+
+.cta-inner p {
+    margin: 5px 0;
+}
+
+.cta-inner .ceja {
+    color: #ffe0c9;
+}
+
+/* Pie de pagina */
+.st-footer {
+    background: #30251f;
+    color: #ffffff;
+    padding: 24px 0;
+    margin-top: 35px;
+}
+
+.ftr-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ftr-brnd {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.ftr-inner p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.copy {
+    color: #d9c8bc;
+}
+
+/* Ajuste para pantallas chicas */
+@media (max-width: 700px) {
+    .hdr-in {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mn-nav {
+        gap: 12px;
+    }
+
+    .hero,
+    .about-story {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-top: 30px;
+    }
+
+    .hero {
+        margin-bottom: 30px;
+    }
+
+    .cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .ftr-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
