@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | PiZ</title>
+</head>
+<body>
+    <header class="headr-sit">
+        <div class="container hdr-in">
+            <a class="brand" href="index.html">
+                <img src="assets/img/logo.svg" alt="Logo de la pizzeria" width="52" height="52">
+                <span><strong>PiZ</strong><small>LA MATEPIZZA</small></span>          
+            </a>
+            <nav class="mn-nav" aria-label="Navegacion">
+                <a href="index.html" aria-current="pagina">Inicio</a>
+                <a href="menu.html">Menu</a>
+                <a href="nos.html">La PiZeria</a>
+                <a href="contact.html">Conocenos</a>
+                <a href="menu.html#carrito" class="nav-cart">Carrito</a>
+            </nav>
+        </div>
+    </header>
+    <main class="inr-pg contact-pg">
+        <section class="int-pg container">
+            <p class="ceja">ESTAMOS PARA AYUDARTE</p>
+            <h1>Hablemos un rato.</h1>
+            <p>¿Tenes una consulta, una idea o queres preguntarnos por las PiZ? Escribinos.</p>
+        </section>
+        <section class="container contact-layt">
+            <div class="contact-inf">
+                <p class="ceja">PASA A SALUDAR</p>
+                <h2>Nos gusta saber de vos.</h2>
+                <p>Somos un local al que le interesa su gente, asi que cada mensaje lo leemos con atencion.</p>
+                <div class="contact-dtl">
+                    <span class="dtl-icn" aria-hidden="true">⌂</span>
+                    <div>
+                        <strong>Encontranos</strong>
+                        <p>La esquina de tu barrio<br><small>Cordoba, Argentina</small></p>
+                    </div>
+                </div>
+                <div class="contact-dtl">
+                    <span class="dtl-icn" aria-hidden="true">◷</span>
+                    <div>
+                        <strong>Horario</strong>
+                        <p>Martes a domingo<br><small>19:00 a 23:30</small></p>
+                    </div>
+                </div>
+                <div class="contact-dtl">
+                    <span class="dtl-icn" aria-hidden="true">✉</span>
+                    <div>
+                        <strong>Correo</strong>
+                        <p><a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a><br></p>
+                    </div>
+                </div>
+                <div class="contact-tip">
+                    <strong>¿Ya elegiste tus PiZ?</strong>
+                    <p>Volvé al menu, elegi tus favoritas y revisalas en el carrito.</p>
+                    <a class="txt-link" href="menu.html#piz">Ir al menu <span aria-hidden="true">-&gt;</span></a>
+                </div>
+            </div>
+            <form class="contact-form" action="mailto:tu-email@ejemplo.com" method="post" enctype="text/plain">
+                <p class="ceja">DEJANOS TU MENSAJE</p>
+                <h2>¿En que te ayudamos?</h2>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" name="nombre" id="nombre" autocomplete="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" id="email" autocomplete="email" placeholder="vos@ejemplo.com" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" name="telefono" id="telefono" autocomplete="tel" placeholder="351 123 4567">
+                    </div>
+                    <div class="form-field">
+                        <label for="motivo">Motivo de contacto</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="" selected disabled>Elegí una opcion</option>
+                            <option>Consulta por el menu</option>
+                            <option>Pedido o evento</option>
+                            <option>Comentario o sugerencia</option>
+                            <option>Otro motivo</option>
+                        </select>
+                    </div>
+                </div>
+                <fieldset class="form-field">
+                    <legend>¿Como preferis que te respondamos?</legend>
+                    <div class="choice-row">
+                        <label><input type="radio" name="respuesta" value="email" checked> Por correo</label>
+                        <label><input type="radio" name="respuesta" value="telefono"> Por telefono</label>
+                    </div>
+                </fieldset>
+                <div class="form-field">
+                    <label for="comentarios">Tu mensaje</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Contanos en que podemos ayudarte..." required></textarea>
+                </div>
+                <label class="check-row"><input type="checkbox" name="novedades" value="si"> Quiero recibir novedades del menu.</label>
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">Enviar mensaje <span aria-hidden="true">-&gt;</span></button>
+                    <button class="btn btn-outline" type="reset">Limpiar</button>
+                </div>
+                <p class="form-note">Formulario de demostracion</p>
+            </form>
+        </section>
+    </main>
+    <footer class st-footer>
+        <div class="container ftr-inner">
+            <a href="index.html" class="ftr-brnd">PiZ</a>
+            <p>Hechas a mano, con inteligencia y muchas ecuaciones</p>
+            <p class="copy">© 2026 PiZ· Sitio de muestra</p>
+        </div>
+    </footer>
+</body>
+</html>
